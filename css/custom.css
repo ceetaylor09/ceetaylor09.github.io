@@ -295,6 +295,10 @@ h1.heading {
     margin-top: 10px;
 }
 
+#take-action .menuBottom span a.btn {
+    margin-top: 6px;
+}
+
 .menuBottom span a.btn:hover, .menuBottom span a.btn:focus {
     color: #8d252a;
     background-color: #e7e7e7;
