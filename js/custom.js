@@ -1,5 +1,5 @@
 $(function () {
-    
+
     scrollSectionWindow();
     animateSectionScoll();
     thumbMoveRight1($forwardButton.eq(0));
@@ -12,13 +12,13 @@ $(function () {
     thumbMoveLeft3($backButton.eq(3));
     thumbMoveRight4($forwardButton.eq(4));
     thumbMoveLeft4($backButton.eq(4));
-    
+
 
 });
 
 
 function scrollSectionWindow() {
-         
+
     var lastScrollTop = 0, range = 5;
 
     /* MENU STICKING AT DESKTOP/LAPTOP SIZE */
@@ -29,26 +29,26 @@ function scrollSectionWindow() {
         $('.navWrapper').height('#sidebar-menu1, #sidebar-menu2, #sidebar-menu3, #sidebar-menu4, #sidebar-menu5').outerHeight();
        /* $('.navWrapper').height('#sidebar-menu1').outerHeight();*/
 
-        if ($(window).width() >= 1024) {	
+        if ($(window).width() >= 1024) {
 
             if (Math.abs(lastScrollTop - nowScrollTop) >= range) {
 
                 if (nowScrollTop > lastScrollTop) {
-                    if (nowScrollTop > $(".nav-stacked").offset().top - 78) {      
+                    if (nowScrollTop > $(".nav-stacked").offset().top - 78) {
                         $(".nav-stacked").css({'position' : 'fixed'}).css({'top' : '70px'});
 
                     }
-                } else {             
-                    if (nowScrollTop < $(".nav-stacked").offset().top - nowScrollTop / 7.15) {      
+                } else {
+                    if (nowScrollTop < $(".nav-stacked").offset().top - nowScrollTop / 7.15) {
                         $(".nav-stacked").css({'position' : 'static'});
                     }
 
-                    /*if (nowScrollTop < $("#sidebar-menu1.nav-stacked").offset().top - nowScrollTop + 478) {      
+                    /*if (nowScrollTop < $("#sidebar-menu1.nav-stacked").offset().top - nowScrollTop + 478) {
                         $("#sidebar-menu1.nav-stacked").css({'position' : 'static'});
                     }*/
                 }
-                lastScrollTop = nowScrollTop;   
-            }  
+                lastScrollTop = nowScrollTop;
+            }
         }
 
         /* MENU STICKING AT NETBOOK/TABLET SIZE */
@@ -57,35 +57,35 @@ function scrollSectionWindow() {
             if (Math.abs(lastScrollTop - nowScrollTop) >= range) {
 
                 if (nowScrollTop > lastScrollTop) {
-                    if (nowScrollTop > $(".nav-stacked").offset().top - 121) {      
+                    if (nowScrollTop > $(".nav-stacked").offset().top - 121) {
                         $(".nav-stacked").css({'position' : 'fixed'}).css({'top' : '120px'});
                     }
-                } else {             
-                    if (nowScrollTop < $(".nav-stacked").offset().top - nowScrollTop / 2.45) {      
+                } else {
+                    if (nowScrollTop < $(".nav-stacked").offset().top - nowScrollTop / 2.45) {
                         $(".nav-stacked").css({'position' : 'static'});
                     }
                 }
-                lastScrollTop = nowScrollTop;   
-            }   
+                lastScrollTop = nowScrollTop;
+            }
         }
 
         /* MENU STICKING AT TABLET SIZE */
-        /*if ($(window).width() >= 767 && $(window).width() <= 990) { 
+        /*if ($(window).width() >= 767 && $(window).width() <= 990) {
 
             $(".nav-stacked").css({'position' : 'static'});
-        } 
+        }
         */
 
         /* MENU STATIC AT PHONE SIZE */
-        if ($(window).width() <= 768) { 
+        if ($(window).width() <= 768) {
 
             $(".nav-stacked").css({'position' : 'static'});
-        } 
+        }
 
     });
  }
-     
-     
+
+
 
 function animateSectionScoll() {
 
@@ -107,8 +107,8 @@ function animateSectionScoll() {
             }*/
         }
     });
-     
-    
+
+
 
     /*$('.panel li a[href^="#"]').on('click',function (e) {
         e.preventDefault();
@@ -118,8 +118,8 @@ function animateSectionScoll() {
         var nowScrollTop2 = $(this).scrollTop();
 
 
-        if (!$target.position().top == nowScrollTop2) { 
-             if ($(window).width() <= 1056) { 
+        if (!$target.position().top == nowScrollTop2) {
+             if ($(window).width() <= 1056) {
                 $('html, body').stop().animate({
                     'scrollTop': ($target.offset().top / $(window).width() + 485)
                 }, 2000);
@@ -135,8 +135,8 @@ function animateSectionScoll() {
         }
 
     });*/
-     
-     
+
+
     $('.panel li a[href^="#"]').on('click',function (e) {
         e.preventDefault();
 
@@ -145,8 +145,8 @@ function animateSectionScoll() {
         var nowScrollTop2 = $(this).scrollTop();
 
 
-        if (!$target.position().top == nowScrollTop2) { 
-             if ($(window).width() >= 769 && $(window).width() <= 992) { 
+        if (!$target.position().top == nowScrollTop2) {
+             if ($(window).width() >= 769 && $(window).width() <= 992) {
                 $('html, body').stop().animate({
                     'scrollTop': ($target.offset().top / $(window).width() + 485)
                 }, 2000);
@@ -157,7 +157,7 @@ function animateSectionScoll() {
             }
         }
 
-    }); 
+    });
 
 
     $('.col-center a[href^="#"]').on('click',function (e) {
@@ -170,8 +170,8 @@ function animateSectionScoll() {
             'scrollTop': ($target.offset().top / $(window).width())
         }, 2000);
     });
-     
-    
+
+
     $('#org-volunteers a[href^="#"], #outreach-champs a[href^="#"], #vol-steering a[href^="#"], #board a[href^="#"], #advisory-board a[href^="#"]').parent().on('click',function (e) {
         e.preventDefault();
 
@@ -184,9 +184,9 @@ function animateSectionScoll() {
                 /*'scrollTop': ($target.offset().top / $(window).width())*/
                 'scrollTop': ($target.position().top)
             }, 1000);
-        }  
+        }
     });
-}    
+}
 
 
 
@@ -197,13 +197,13 @@ function animateSectionScoll() {
 /***********  LOGO MOUSEENTER & MOUSELEAVE FUNCTION  *****************/
 
 $(".navbar-brand img").on({
-    mouseenter: function() {    
+    mouseenter: function() {
         $(this).attr('src', 'img/share-the-care_logo-hover.png');
     },
-    mouseleave: function() {    
+    mouseleave: function() {
         $(this).attr('src', 'img/share-the-care_logo.png');
     }
-}); 
+});
 
 /***************************************************************************/
 
@@ -246,7 +246,7 @@ var tabCorps1 = $('article#corps-intro'),
 
 
 
-/* WHY STC SECTION VARIABLES */ 
+/* WHY STC SECTION VARIABLES */
 
 var tabWhy1 = $('article#why-stc-overview'),
     tabWhy2 = $('article#what-is-stc'),
@@ -257,7 +257,7 @@ var tabWhy1 = $('article#why-stc-overview'),
 
 
 
- /* WHO WE ARE SECTION VARIABLES */ 
+ /* WHO WE ARE SECTION VARIABLES */
 
 var tabWhoWeAre1 = $('article#organization'),
     tabWhoWeAre2 = $('article#people-behind-stc'),
@@ -267,7 +267,7 @@ var tabWhoWeAre1 = $('article#organization'),
 
 
 
- /* WHAT'S NEXT SECTION VARIABLES */ 
+ /* WHAT'S NEXT SECTION VARIABLES */
 
 var tabWhatsNext1 = $('article#what-next-media'),
     tabWhatsNext2 = $('article#what-news'),
@@ -275,7 +275,7 @@ var tabWhatsNext1 = $('article#what-next-media'),
 
 
 
- /* TAKE ACTION SECTION VARIABLES */ 
+ /* TAKE ACTION SECTION VARIABLES */
 
 var tabTakeAction1 = $('article#donate-stc'),
     tabTakeAction2 = $('article#purchase-book'),
@@ -298,29 +298,29 @@ function revealTabContent($this) {
 
     $this.removeClass('fade in');
     $this.css('display', 'block').removeClass('tabOut').addClass('tabIn');
-    $this.siblings().removeClass('tabIn').addClass('tabOut').delay(300).queue(function(next) 
+    $this.siblings().removeClass('tabIn').addClass('tabOut').delay(300).queue(function(next)
     {
         $this.siblings().css('display', 'none');
         next();
-    }); 
+    });
 }
 
 
 /***************************************************************************/
 
- /* HOW CAN WE HELP YOU SECTION SPECIFIC */     
+ /* HOW CAN WE HELP YOU SECTION SPECIFIC */
 
 
-$(".nav-stacked a.help1").click(function() {       
+$(".nav-stacked a.help1").click(function() {
     $(this).toggleClass("active");
     $('#howCan1').css('background', 'url(img/how-can-we-help-header-img1a.jpg) no-repeat top center fixed').css('background-size', 'contain');
     $('#howCan1 h1.subtitle').text("CAREGIVERS & CONCERNED FRIENDS");
-    
+
     if ($(window).width() >= 992 && $(window).width() <= 1024) {
         $('#howCan1').css('margin-top', '25px').css('background-position', '0 50px');
     }
-    
-    if ($(window).width() <= 768) { 
+
+    if ($(window).width() <= 768) {
         $('#howCanIconSml').css('background', 'url(img/caregive-heading-sml-icon.svg) no-repeat top center').css('background-size', 'contain');
     }
 
@@ -329,33 +329,33 @@ $(".nav-stacked a.help1").click(function() {
 });
 
 
-$(".nav-stacked a.help2").click(function() {       
+$(".nav-stacked a.help2").click(function() {
     $(this).toggleClass("active");
     $('#howCan1').css('background', 'url(img/stc_health_pros_img1a.jpg) no-repeat top center fixed').css('background-size', 'contain');
     $('#howCan1 h1.subtitle').text("HEALTH PROFESSIONALS");
-    
+
     if ($(window).width() >= 992 && $(window).width() <= 1024) {
         $('#howCan1').css('margin-top', '25px').css('background-position', '0 50px');
     }
-    
-    if ($(window).width() <= 768) { 
+
+    if ($(window).width() <= 768) {
         $('#howCanIconSml').css('background', 'url(img/health-heading-sml-icon.svg) no-repeat top center').css('background-size', 'contain');
     }
 
-    revealTabContent(tabHealthPro1); 
+    revealTabContent(tabHealthPro1);
 });
 
 
-$(".nav-stacked a.help3").click(function() {    
+$(".nav-stacked a.help3").click(function() {
     $(this).toggleClass("active");
     $('#howCan1').css('background', 'url(img/stc_faith_comm_img1a.jpg) no-repeat top center fixed').css('background-size', 'contain');
     $('#howCan1 h1.subtitle').text("FAITH COMMUNITIES");
-    
+
     if ($(window).width() >= 992 && $(window).width() <= 1024) {
         $('#howCan1').css('margin-top', '25px').css('background-position', '0 50px');
     }
-    
-    if ($(window).width() <= 768) { 
+
+    if ($(window).width() <= 768) {
         $('#howCanIconSml').css('background', 'url(img/faith-heading-sml-icon.svg) no-repeat top center').css('background-size', 'contain');
     }
 
@@ -364,16 +364,16 @@ $(".nav-stacked a.help3").click(function() {
 });
 
 
-$(".nav-stacked a.help4").click(function() {       
+$(".nav-stacked a.help4").click(function() {
     $(this).toggleClass("active");
     $('#howCan1').css('background', 'url(img/stc_corporations_img1a.jpg) no-repeat top center fixed').css('background-size', 'contain');
     $('#howCan1 h1.subtitle').text("CORPORATIONS");
-    
+
     if ($(window).width() >= 992 && $(window).width() <= 1024) {
         $('#howCan1').css('margin-top', '25px').css('background-position', '0 50px');
     }
-    
-    if ($(window).width() <= 768) { 
+
+    if ($(window).width() <= 768) {
         $('#howCanIconSml').css('background', 'url(img/corps-heading-sml-icon.svg) no-repeat top center').css('background-size', 'contain');
     }
 
@@ -382,45 +382,45 @@ $(".nav-stacked a.help4").click(function() {
 });
 
 
-/* WHY STC SECTION SPECIFIC */ 
+/* WHY STC SECTION SPECIFIC */
 
-$(".nav-stacked a.why1").click(function() {       
+$(".nav-stacked a.why1").click(function() {
     $(this).toggleClass("active");
 
     revealTabContent(tabWhy1);
 });
 
 
-/* WHO WE ARE SECTION SPECIFIC */  
+/* WHO WE ARE SECTION SPECIFIC */
 
-$(".nav-stacked a.whoWeAre1").click(function() {       
+$(".nav-stacked a.whoWeAre1").click(function() {
     $(this).toggleClass("active");
 
     revealTabContent(tabWhoWeAre1);
 });
 
 
-/* WHAT'S NEXT SECTION SPECIFIC */  
+/* WHAT'S NEXT SECTION SPECIFIC */
 
-$(".nav-stacked a.whatsNext1").click(function() {       
+$(".nav-stacked a.whatsNext1").click(function() {
     $(this).toggleClass("active");
 
     revealTabContent(tabWhatsNext1);
 });
 
 
-/* TAKE ACTION SECTION SPECIFIC */  
+/* TAKE ACTION SECTION SPECIFIC */
 
-$(".nav-stacked a.tabTakeAction1").click(function() {       
+$(".nav-stacked a.tabTakeAction1").click(function() {
     $(this).toggleClass("active");
 
     revealTabContent(takeAct1);
 });
 
 
-/* TAKE ACTION SECTION SPECIFIC */  
+/* TAKE ACTION SECTION SPECIFIC */
 
-$(".nav-stacked a.tabTakeAction1").click(function() {       
+$(".nav-stacked a.tabTakeAction1").click(function() {
     $(this).toggleClass("active");
 
     revealTabContent(takeAct1);
@@ -452,13 +452,13 @@ $(".nav-stacked a.tabTakeAction1").click(function() {
 
 
 /* CAREGIVERS & FRIENDS LINKS */
-$('#care-menu1 li a').eq(0).on('click', function () {        
+$('#care-menu1 li a').eq(0).on('click', function () {
     revealTabContent(tabCaregiver1);
 });
 
-$('#care-menu1 li a').eq(1).on('click', function () {        
+$('#care-menu1 li a').eq(1).on('click', function () {
     revealTabContent(tabCaregiver2);
-});                                
+});
 
 $('#care-menu1 li a').eq(2).on('click', function () {
     revealTabContent(tabCaregiver3);
@@ -491,13 +491,13 @@ $('#care-menu1 li a').eq(8).on('click', function () {
 
 
 /* HEALTH PROFESSIONALS LINKS */
-$('#care-menu2 li a').eq(0).on('click', function () {        
+$('#care-menu2 li a').eq(0).on('click', function () {
     revealTabContent(tabHealthPro1);
 });
 
-$('#care-menu2 li a').eq(1).on('click', function () {        
+$('#care-menu2 li a').eq(1).on('click', function () {
     revealTabContent(tabHealthPro2);
-});                                
+});
 
 $('#care-menu2 li a').eq(2).on('click', function () {
     revealTabContent(tabHealthPro3);
@@ -526,13 +526,13 @@ $('#care-menu2 li a').eq(7).on('click', function () {
 
 
 /* FAITH COMMUNITIES LINKS */
-$('#care-menu3 li a').eq(0).on('click', function () {        
+$('#care-menu3 li a').eq(0).on('click', function () {
     revealTabContent(tabFaithComm1);
 });
 
-$('#care-menu3 li a').eq(1).on('click', function () {        
+$('#care-menu3 li a').eq(1).on('click', function () {
     revealTabContent(tabFaithComm2);
-});                                
+});
 
 $('#care-menu3 li a').eq(2).on('click', function () {
     revealTabContent(tabFaithComm3);
@@ -557,13 +557,13 @@ $('#care-menu3 li a').eq(6).on('click', function () {
 
 
 /* CORPORATIONS LINKS */
-$('#care-menu4 li a').eq(0).on('click', function () {        
+$('#care-menu4 li a').eq(0).on('click', function () {
     revealTabContent(tabCorps1);
 });
 
-$('#care-menu4 li a').eq(1).on('click', function () {        
+$('#care-menu4 li a').eq(1).on('click', function () {
     revealTabContent(tabCorps2);
-});                                
+});
 
 $('#care-menu4 li a').eq(2).on('click', function () {
     revealTabContent(tabCorps3);
@@ -612,7 +612,7 @@ $("article .btn.ch6").on('click', function(){
 });
 
 
-/* HIDE & SHOW "READ MORE" in HEALTH PROFESSIONALS CONTENT */ 
+/* HIDE & SHOW "READ MORE" in HEALTH PROFESSIONALS CONTENT */
 
 $("article .btn.news-pdf").on('click', function(){
     $('.news-pdf.moreText').slideToggle(1000);
@@ -627,7 +627,7 @@ $("article .btn.sally-dogs").on('click', function(){
 });
 
 
-/* HIDE & SHOW "READ MORE" in WHO WE ARE CONTENT */ 
+/* HIDE & SHOW "READ MORE" in WHO WE ARE CONTENT */
 
 $("article .sheila-bio-text").on('click', function(){
     $('.sheila-bio-text.moreText').slideToggle(1000);
@@ -640,13 +640,13 @@ $("article .sheila-bio-text").on('click', function(){
  /* WHY STC SECTION SPECIFIC */
 
 
-$('#why-menu li a').eq(0).on('click', function () {        
+$('#why-menu li a').eq(0).on('click', function () {
     revealTabContent(tabWhy1);
 });
 
-$('#why-menu li a').eq(1).on('click', function () {        
+$('#why-menu li a').eq(1).on('click', function () {
     revealTabContent(tabWhy2);
-});                                
+});
 
 $('#why-menu li a').eq(2).on('click', function () {
     revealTabContent(tabWhy3);
@@ -671,13 +671,13 @@ $('#why-menu li a').eq(5).on('click', function () {
  /* WHO WE ARE SECTION SPECIFIC */
 
 
-$('#who-we-are-menu li a').eq(0).on('click', function () {        
+$('#who-we-are-menu li a').eq(0).on('click', function () {
     revealTabContent(tabWhoWeAre1);
 });
 
-$('#who-we-are-menu li a').eq(1).on('click', function () {        
+$('#who-we-are-menu li a').eq(1).on('click', function () {
     revealTabContent(tabWhoWeAre2);
-});                                
+});
 
 $('#who-we-are-menu li a').eq(2).on('click', function () {
     revealTabContent(tabWhoWeAre3);
@@ -698,13 +698,13 @@ $('#who-we-are-menu li a').eq(4).on('click', function () {
  /* WHAT'S NEXT SECTION SPECIFIC */
 
 
-$('#whats-next-menu li a').eq(0).on('click', function () {        
+$('#whats-next-menu li a').eq(0).on('click', function () {
     revealTabContent(tabWhatsNext1);
 });
 
-$('#whats-next-menu li a').eq(1).on('click', function () {        
+$('#whats-next-menu li a').eq(1).on('click', function () {
     revealTabContent(tabWhatsNext2);
-});                                
+});
 
 $('#whats-next-menu li a').eq(2).on('click', function () {
     revealTabContent(tabWhatsNext3);
@@ -718,13 +718,13 @@ $('#whats-next-menu li a').eq(2).on('click', function () {
  /* TAKE ACTION SECTION SPECIFIC */
 
 
-$('#take-action-menu li a').eq(0).on('click', function () {        
+$('#take-action-menu li a').eq(0).on('click', function () {
     revealTabContent(tabTakeAction1);
 });
 
-$('#take-action-menu li a').eq(1).on('click', function () {        
+$('#take-action-menu li a').eq(1).on('click', function () {
     revealTabContent(tabTakeAction2);
-});                                
+});
 
 $('#take-action-menu li a').eq(2).on('click', function () {
     revealTabContent(tabTakeAction3);
@@ -753,7 +753,7 @@ $('#take-action-menu li a').eq(6).on('click', function () {
 
 
 
-// ******* GETTING BIO INFO & RETURNING TO THUMBNAIL SECTIONS *************** 
+// ******* GETTING BIO INFO & RETURNING TO THUMBNAIL SECTIONS ***************
 
 var $thumbImage = $('.img-flexed'),
     $thumbReturn = $('.closeButton a'),
@@ -763,33 +763,33 @@ var $thumbImage = $('.img-flexed'),
     $buttonControls = $('.button-controls'),
     $forwardButton = $('.forward-btn'),
     $backButton = $('.back-btn'),
-    horizLeft = -225,
-    horizRight = 225,
+    horizLeft = -239,
+    horizRight = 239,
     horizLeftSml = -238,
     horizRightSml = 238,
-    
-    
+
+
     $thumbWrapper1 = $("#org-volunteers .thumb-wrapper"),
     $thumbWrapper2 = $("#outreach-champs .thumb-wrapper"),
     $thumbWrapper3 = $("#board .thumb-wrapper"),
     $thumbWrapper4 = $("#vol-steering .thumb-wrapper"),
     $thumbWrapper5 = $("#advisory-board .thumb-wrapper"),
-    
+
     $thumbImage1 = $('#org-volunteers .img-flexed'),
     $thumbImage2 = $('#outreach-champs .img-flexed'),
     $thumbImage3 = $('#board .img-flexed'),
     $thumbImage4 = $('#vol-steering .img-flexed'),
     $thumbImage5 = $('#advisory-board .img-flexed'),
-    
+
     $phyllisInfo = $("#phyllis-text.moreText"),
     $juneInfo = $("#june-text.moreText"),
     $bettyInfo = $("#betty-text.moreText"),
     $edInfo = $("#ed-text.moreText"),
     $christieInfo = $("#christie-text.moreText"),
-    
+
     $claireInfo = $("#claire-text.moreText"),
     $kimiInfo = $("#kimi-text.moreText"),
-    
+
     $maryInfo = $("#mary-text.moreText"),
     $arleneInfo = $("#arlene-text.moreText"),
     $eileenInfo = $("#eileen-text.moreText"),
@@ -798,7 +798,7 @@ var $thumbImage = $('.img-flexed'),
     $aleneInfo = $("#alene-text.moreText"),
     $phyllisInfo2 = $("#phyllisS-text.moreText"),
     $marcInfo = $("#marc-text.moreText"),
-    
+
     $melindaInfo = $("#melinda-text.moreText"),
     $steveInfo = $("#steve-text.moreText"),
     $sharonInfo = $("#sharon-text.moreText"),
@@ -806,7 +806,7 @@ var $thumbImage = $('.img-flexed'),
     $nigelInfo = $("#nigel-text.moreText"),
     $fayInfo = $("#fay-text.moreText"),
     $johnInfo = $("#john-text.moreText"),
-    
+
     $marcInfo2 = $("#marcB-text.moreText"),
     $jamesInfo = $("#james-text.moreText"),
     $margotInfo = $("#margot-text.moreText"),
@@ -821,12 +821,12 @@ var $thumbImage = $('.img-flexed'),
 function revealBioInfo1($this) { // $("#phyllis-text.moreText") is the "$this"
     $this.toggleClass("active");
     $buttonControls.eq(0).css('display', 'none');
-    
+
     $thumbImage1.siblings().removeClass('tabIn').addClass('tabOut').delay(300).queue(function(next) {
         $thumbImage1.siblings().css('display', 'none');
-        
+
         $this.delay(100).css('display', 'block').removeClass('tabOut').addClass('tabIn');
-    
+
         if ($(window).width() <= 320) {
             $(".info-container").eq(0).delay(200).css('width', '105%').css('left', '-15px');
         } else if ($(window).width() >= 321 && $(window).width() <= 413) {
@@ -838,25 +838,25 @@ function revealBioInfo1($this) { // $("#phyllis-text.moreText") is the "$this"
         } else if ($(window).width() >= 569 && $(window).width() <= 768) {
             $(".info-container").eq(0).delay(200).css('width', '88%').css('left', '-10px');
         } else {
-            $(".info-container").eq(0).delay(200).css('width', '90%').css('left', '-10px');
+            $(".info-container").eq(0).delay(200).css('width', '94%').css('left', '-10px');
         }
-        
+
         next();
     });
-    
+
 }
 
 
 function revealBioInfo2($this) { // $("#phyllis-text.moreText") is the "$this"
     $this.toggleClass("active");
     $buttonControls.eq(1).css('display', 'none');
-    
-    $thumbImage2.siblings().removeClass('tabIn').addClass('tabOut').delay(300).queue(function(next) 
+
+    $thumbImage2.siblings().removeClass('tabIn').addClass('tabOut').delay(300).queue(function(next)
     {
         $thumbImage2.siblings().css('display', 'none');
-        
+
         $this.delay(100).css('display', 'block').removeClass('tabOut').addClass('tabIn');
-    
+
         if ($(window).width() <= 320) {
             $(".info-container").eq(1).delay(200).css('width', '105%').css('left', '-15px');
         } else if ($(window).width() >= 321 && $(window).width() <= 413) {
@@ -868,25 +868,25 @@ function revealBioInfo2($this) { // $("#phyllis-text.moreText") is the "$this"
         } else if ($(window).width() >= 569 && $(window).width() <= 768) {
             $(".info-container").eq(1).delay(200).css('width', '88%').css('left', '-10px');
         } else {
-            $(".info-container").eq(1).delay(200).css('width', '90%').css('left', '-10px');
+            $(".info-container").eq(1).delay(200).css('width', '94%').css('left', '-10px');
         }
-        
+
         next();
     });
- 
+
 }
 
 function revealBioInfo3($this) { // $("#phyllis-text.moreText") is the "$this"
     $this.toggleClass("active");
     $buttonControls.eq(2).css('display', 'none');
     /*$(".info-container").css('width', '100%');*/
-    
-    $thumbImage3.siblings().removeClass('tabIn').addClass('tabOut').delay(300).queue(function(next) 
+
+    $thumbImage3.siblings().removeClass('tabIn').addClass('tabOut').delay(300).queue(function(next)
     {
         $thumbImage3.siblings().css('display', 'none');
-        
+
         $this.delay(100).css('display', 'block').removeClass('tabOut').addClass('tabIn');
-    
+
         if ($(window).width() <= 320) {
             $(".info-container").eq(2).delay(200).css('width', '105%').css('left', '-15px');
         } else if ($(window).width() >= 321 && $(window).width() <= 413) {
@@ -898,12 +898,12 @@ function revealBioInfo3($this) { // $("#phyllis-text.moreText") is the "$this"
         } else if ($(window).width() >= 569 && $(window).width() <= 768) {
             $(".info-container").eq(2).delay(200).css('width', '88%').css('left', '-10px');
         } else {
-            $(".info-container").eq(2).delay(200).css('width', '90%').css('left', '-10px');
+            $(".info-container").eq(2).delay(200).css('width', '94%').css('left', '-10px');
         }
-        
+
         next();
     });
- 
+
 }
 
 
@@ -912,13 +912,13 @@ function revealBioInfo3($this) { // $("#phyllis-text.moreText") is the "$this"
 function revealBioInfo4($this) { // $("#phyllis-text.moreText") is the "$this"
     $this.toggleClass("active");
     $buttonControls.eq(3).css('display', 'none');
-    
-    $thumbImage4.siblings().removeClass('tabIn').addClass('tabOut').delay(300).queue(function(next) 
+
+    $thumbImage4.siblings().removeClass('tabIn').addClass('tabOut').delay(300).queue(function(next)
     {
         $thumbImage4.siblings().css('display', 'none');
-        
+
         $this.delay(100).css('display', 'block').removeClass('tabOut').addClass('tabIn');
-    
+
         if ($(window).width() <= 320) {
             $(".info-container").eq(3).delay(200).css('width', '105%').css('left', '-15px');
         } else if ($(window).width() >= 321 && $(window).width() <= 413) {
@@ -930,25 +930,25 @@ function revealBioInfo4($this) { // $("#phyllis-text.moreText") is the "$this"
         } else if ($(window).width() >= 569 && $(window).width() <= 768) {
             $(".info-container").eq(3).delay(200).css('width', '88%').css('left', '-10px');
         } else {
-            $(".info-container").eq(3).delay(200).css('width', '90%').css('left', '-10px');
+            $(".info-container").eq(3).delay(200).css('width', '94%').css('left', '-10px');
         }
-        
+
         next();
     });
- 
+
 }
 
 
 function revealBioInfo5($this) { // $("#phyllis-text.moreText") is the "$this"
     $this.toggleClass("active");
     $buttonControls.eq(4).css('display', 'none');
-    
-    $thumbImage5.siblings().removeClass('tabIn').addClass('tabOut').delay(300).queue(function(next) 
+
+    $thumbImage5.siblings().removeClass('tabIn').addClass('tabOut').delay(300).queue(function(next)
     {
         $thumbImage5.siblings().css('display', 'none');
-        
+
         $this.delay(100).css('display', 'block').removeClass('tabOut').addClass('tabIn');
-    
+
         if ($(window).width() <= 320) {
             $(".info-container").eq(4).delay(200).css('width', '105%').css('left', '-15px');
         } else if ($(window).width() >= 321 && $(window).width() <= 413) {
@@ -960,12 +960,12 @@ function revealBioInfo5($this) { // $("#phyllis-text.moreText") is the "$this"
         } else if ($(window).width() >= 569 && $(window).width() <= 768) {
             $(".info-container").eq(4).delay(200).css('width', '88%').css('left', '-10px');
         } else {
-            $(".info-container").eq(4).delay(200).css('width', '90%').css('left', '-10px');
+            $(".info-container").eq(4).delay(200).css('width', '94%').css('left', '-10px');
         }
-        
+
         next();
     });
- 
+
 }
 
 
@@ -975,14 +975,14 @@ function revealBioInfo5($this) { // $("#phyllis-text.moreText") is the "$this"
 
 function hideBioInfo($this) { // (thumbImage1) is the "$this"
     /*$this.children().css('display', 'block').removeClass('tabOut').addClass('tabIn');*/
-    
-    
-    $moreText.removeClass('tabIn').addClass('tabOut').delay(300).queue(function(next) 
+
+
+    $moreText.removeClass('tabIn').addClass('tabOut').delay(300).queue(function(next)
     {
         $buttonControls.css('display', 'block');
-        
+
         $this.delay(100).children().css('display', 'block').removeClass('tabOut').addClass('tabIn');
-    
+
         if ($(window).width() <= 320) {
             $(".info-container").delay(200).css('width', '80%').css('left', '-2px');
         } else if ($(window).width() >= 321 && $(window).width() <= 413) {
@@ -994,47 +994,47 @@ function hideBioInfo($this) { // (thumbImage1) is the "$this"
         } else if ($(window).width() >= 569 && $(window).width() <= 768) {
             $(".info-container").css('width', '80%').css('left', '40px');
         } else {
-            $(".info-container").css('width', '90%').css('left', '-10px');
+            $(".info-container").css('width', '94%').css('left', '0px');
         }
-         
-        
-        if ($(window).width() <= 568) { 
+
+
+        if ($(window).width() <= 568) {
             $buttonControls.eq(1).css('display', 'block');
         } else {
             $buttonControls.eq(1).css('display', 'none');
         }
-        
+
         $moreText.css('display', 'none');
         next();
-    }); 
-} 
-
-
-
-
-// ******* MOVING FORWARD & BACK BUTTONS TO MOVE THUMBNAILS SECTIONS *************** 
-    
-/*$thumbWrapper.eq(0).css('left', + '0px');*/
-
-
-function thumbMoveLeft1($this) { 
-
-    $this.on('click', function() {
-        $thumbWrapper1.css({left: '+=' + horizLeft + 'px'});
-        
-        if ($(window).width() <= 768) { 
-            $thumbWrapper1.css({left: '+=' + horizLeftSml + 'px'});
-        }
-            
     });
 }
 
-function thumbMoveRight1($this) { 
-   
+
+
+
+// ******* MOVING FORWARD & BACK BUTTONS TO MOVE THUMBNAILS SECTIONS ***************
+
+/*$thumbWrapper.eq(0).css('left', + '0px');*/
+
+
+function thumbMoveLeft1($this) {
+
+    $this.on('click', function() {
+        $thumbWrapper1.css({left: '+=' + horizLeft + 'px'});
+
+        if ($(window).width() <= 768) {
+            $thumbWrapper1.css({left: '+=' + horizLeftSml + 'px'});
+        }
+
+    });
+}
+
+function thumbMoveRight1($this) {
+
     $this.on('click', function() {
         $thumbWrapper1.css({left: '+=' + horizRight + 'px'});
-        
-        if ($(window).width() <= 768) { 
+
+        if ($(window).width() <= 768) {
             $thumbWrapper1.css({left: '+=' + horizRightSml + 'px'});
         }
     });
@@ -1042,23 +1042,23 @@ function thumbMoveRight1($this) {
 
 
 
-function thumbMoveLeft2a($this) { 
+function thumbMoveLeft2a($this) {
 
     $this.on('click', function() {
         $thumbWrapper2.css({left: '+=' + horizLeft + 'px'});
-        
-        if ($(window).width() <= 768) { 
+
+        if ($(window).width() <= 768) {
             $thumbWrapper2.css({left: '+=' + horizLeftSml + 'px'});
         }
     });
 }
 
-function thumbMoveRight2a($this) { 
-    
+function thumbMoveRight2a($this) {
+
     $this.on('click', function() {
         $thumbWrapper2.css({left: '+=' + horizRight + 'px'});
-        
-        if ($(window).width() <= 768) { 
+
+        if ($(window).width() <= 768) {
             $thumbWrapper2.css({left: '+=' + horizRightSml + 'px'});
         }
     });
@@ -1067,23 +1067,23 @@ function thumbMoveRight2a($this) {
 
 
 
-function thumbMoveLeft2($this) { 
+function thumbMoveLeft2($this) {
 
     $this.on('click', function() {
         $thumbWrapper3.css({left: '+=' + horizLeft + 'px'});
-        
-        if ($(window).width() <= 768) { 
+
+        if ($(window).width() <= 768) {
             $thumbWrapper3.css({left: '+=' + horizLeftSml + 'px'});
         }
     });
 }
 
-function thumbMoveRight2($this) { 
-    
+function thumbMoveRight2($this) {
+
     $this.on('click', function() {
         $thumbWrapper3.css({left: '+=' + horizRight + 'px'});
-        
-        if ($(window).width() <= 768) { 
+
+        if ($(window).width() <= 768) {
             $thumbWrapper3.css({left: '+=' + horizRightSml + 'px'});
         }
     });
@@ -1092,23 +1092,23 @@ function thumbMoveRight2($this) {
 
 
 
-function thumbMoveLeft3($this) { 
-    
+function thumbMoveLeft3($this) {
+
     $this.on('click', function() {
         $thumbWrapper4.css({left: '+=' + horizLeft + 'px'});
-        
-        if ($(window).width() <= 768) { 
+
+        if ($(window).width() <= 768) {
             $thumbWrapper4.css({left: '+=' + horizLeftSml + 'px'});
         }
     });
 }
 
-function thumbMoveRight3($this) { 
-     
+function thumbMoveRight3($this) {
+
     $this.on('click', function() {
         $thumbWrapper4.css({left: '+=' + horizRight + 'px'});
-        
-        if ($(window).width() <= 768) { 
+
+        if ($(window).width() <= 768) {
             $thumbWrapper4.css({left: '+=' + horizRightSml + 'px'});
         }
     });
@@ -1117,23 +1117,23 @@ function thumbMoveRight3($this) {
 
 
 
-function thumbMoveLeft4($this) { 
-    
+function thumbMoveLeft4($this) {
+
     $this.on('click', function() {
         $thumbWrapper5.css({left: '+=' + horizLeft + 'px'});
-        
-        if ($(window).width() <= 768) { 
+
+        if ($(window).width() <= 768) {
             $thumbWrapper5.css({left: '+=' + horizLeftSml + 'px'});
         }
     });
 }
 
-function thumbMoveRight4($this) { 
-    
+function thumbMoveRight4($this) {
+
     $this.on('click', function() {
         $thumbWrapper5.css({left: '+=' + horizRight + 'px'});
-        
-        if ($(window).width() <= 768) { 
+
+        if ($(window).width() <= 768) {
             $thumbWrapper5.css({left: '+=' + horizRightSml + 'px'});
         }
     });
@@ -1411,5 +1411,3 @@ $thumbReturn.eq(28).on('click', function (){
         next();
     });
 });*/
-
-

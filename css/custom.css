@@ -2077,9 +2077,9 @@ article#people-behind-stc, article#story-behind-stc, article#our-supporters, art
 
 article .info-container {
     overflow: hidden;
-    width: 86%;
+    width: 94%;
     min-height: 300px;
-    margin-left: 25px;
+    margin-left: 20px;
     position: relative;
 }
 
