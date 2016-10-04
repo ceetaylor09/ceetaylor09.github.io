@@ -2603,6 +2603,7 @@ table tbody td.orig-edition {
     font-size: 1.175em;
     color: white;
     background-color: #cb2d4c;
+    border: none;
 }
 
 
@@ -4256,7 +4257,7 @@ table tbody td.orig-edition {
 
 
     #donate-stc .btn.btn-info {
-        margin: 0 13.5%;
+        margin: 0 10%;
     }
 
 
@@ -4993,7 +4994,7 @@ table tbody td.orig-edition {
     }
 
     #donate-stc .btn.btn-info {
-        margin: 0 11.5%;
+        margin: 0 7%;
     }
 
 
@@ -5351,7 +5352,7 @@ table tbody td.orig-edition {
     }
 
     #donate-stc .btn.btn-info {
-        margin: 0 9%;
+        margin: 0 3%;
     }
 
 
@@ -5363,6 +5364,10 @@ table tbody td.orig-edition {
 
 @media only screen and (min-device-width: 320px) and (max-width: 413px) {
 
+
+    body {
+      overflow-x: hidden;
+    }
 
     .panel .collapse.in {
         width: 260px !important;
@@ -5915,6 +5920,7 @@ table tbody td.orig-edition {
 
 @media only screen and (min-width: 321px) and (max-width: 375px) {
 
+
     .row {
         margin-right: -10px;
         margin-left: -7px;
@@ -6113,7 +6119,7 @@ table tbody td.orig-edition {
     }
 
     #donate-stc .btn.btn-info {
-        margin: 0 7%;
+        margin: 0 1%;
     }
 
 
@@ -6121,6 +6127,7 @@ table tbody td.orig-edition {
 
 
 @media only screen and (max-width : 320px) {
+
 
     .row {
         margin-right: -10px;
@@ -6290,7 +6297,7 @@ table tbody td.orig-edition {
     }
 
     #donate-stc .btn.btn-info {
-        margin: 0 3%;
+        margin: 5% 22%;
     }
 
 
