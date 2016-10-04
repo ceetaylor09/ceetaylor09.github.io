@@ -2064,6 +2064,7 @@ article#people-behind-stc, article#story-behind-stc, article#our-supporters, art
     position: absolute;
     top: 50%;
     right: -20px;
+    margin-right: -8px;
     cursor: pointer;
 }
 
@@ -3221,6 +3222,10 @@ table tbody td.orig-edition {
     article .info-container{
         width: 70%;
         left: 95px;
+    }
+
+    .button-container .back-btn {
+        margin-right: 0;
     }
 
     .thumb-wrapper {
