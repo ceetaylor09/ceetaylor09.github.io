@@ -3913,7 +3913,14 @@ table tbody td.orig-edition {
 }
 
 
+@media only screen and (min-width: 630px) and (max-width: 640px) {
 
+    .row {
+        margin-right: 4px;
+        margin-left: 3px;
+    }
+
+}
 
 
 
@@ -5992,9 +5999,9 @@ table tbody td.orig-edition {
 
     #whats-next-sml {
         position: absolute;
-        width: 59%;
-        top: 150px;
-        left: 95px;
+        width: 59.25%;
+        top: 149px;
+        left: 96px;
     }
 
     #take-action-sml {
@@ -6126,11 +6133,11 @@ table tbody td.orig-edition {
 }
 
 
-@media only screen and (max-width : 360px) {
+@media only screen and (min-width: 355px) and (max-width: 360px) {
 
     .row {
-        margin-right: -7px;
-        margin-left: -6px;
+      margin-right: 2px;
+      margin-left: -1px;
     }
 
     section p {
@@ -6148,7 +6155,7 @@ table tbody td.orig-edition {
 
     .nav.nav-stacked {
         width: 260px;
-        margin: 11% 0 12% 0.5%;
+        margin: 11% 0 12% -2%;
         padding-top: 0.5em;
         background-color: #f0da95;
     }
@@ -6214,21 +6221,21 @@ table tbody td.orig-edition {
 
     article .intro h4.script {
         width: 280px;
-        margin-left: 12px;
+        margin-left: 4px;
     }
 
     article .intro h4 {
         width: 280px;
-        margin-left: 12px;
+        margin-left: 4px;
     }
 
     .container-fluid .col-center a.btn.btn-default {
-        margin: 0 -20%;
+        margin: 0 -21%;
     }
 
 
     #stc-action-box, #whats-action-box, #take-action-box, #who-action-box, #why-action-box {
-        margin: 60px 3%;
+        margin: 60px 2.5%;
     }
 
 
@@ -6243,6 +6250,22 @@ table tbody td.orig-edition {
     #people-behind-stc h4.btn.btn-primary {
         margin: 0 17% 2.5em;
     }
+
+    article .info-container {
+        width: 74%;
+        left: 22px;
+        margin-left: 14px;
+    }
+
+    .button-container .forward-btn {
+        left: -14px;
+    }
+
+    .button-container .back-btn {
+        left: 264px;
+    }
+
+
 
     #donate-stc .btn.btn-info {
         margin: 5% 25%;
