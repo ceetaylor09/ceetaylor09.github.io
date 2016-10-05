@@ -6126,6 +6126,141 @@ table tbody td.orig-edition {
 }
 
 
+@media only screen and (max-width : 360px) {
+
+    .row {
+        margin-right: -7px;
+        margin-left: -6px;
+    }
+
+    section p {
+        font-size: 1.125em;
+        line-height: 1.125em;
+        text-align: center;
+        width: 260px;
+        margin-left: -10px;
+    }
+
+    section img {
+      position: static;
+      margin-left: -4px;
+    }
+
+    .nav.nav-stacked {
+        width: 260px;
+        margin: 11% 0 12% 0.5%;
+        padding-top: 0.5em;
+        background-color: #f0da95;
+    }
+
+
+    h1.heading {
+        width: 330px;
+        margin: 0 -10% 8%;
+        line-height: 1.25em;
+        font-size: 1.625em;
+        padding-top: 4em;
+    }
+
+    #howCanIconSml {
+        margin: 40px;
+    }
+
+
+    #menuChoicesSml {
+        height: 400px;
+        margin-top: -3em;
+    }
+
+    #caregive-sml {
+        position: absolute;
+        width: 62%;
+        margin-left: -18px;
+    }
+
+    #why-sml {
+        position: absolute;
+        width: 67%;
+        left: 73px;
+    }
+
+    #who-we-sml {
+        position: absolute;
+        width: 68.5%;
+        top: 160px;
+        margin-left: -18px;
+    }
+
+    #whats-next-sml {
+        position: absolute;
+        width: 62.25%;
+        top: 149px;
+        left: 89px;
+    }
+
+    #take-action-sml {
+        position: absolute;
+        width: 61%;
+        top: 314px;
+        margin-left: -18px;
+    }
+
+    #placeholder-sml {
+        position: absolute;
+        width: 66%;
+        top: 316px;
+        left: 75px;
+    }
+
+    article .intro h4.script {
+        width: 280px;
+        margin-left: 12px;
+    }
+
+    article .intro h4 {
+        width: 280px;
+        margin-left: 12px;
+    }
+
+    .container-fluid .col-center a.btn.btn-default {
+        margin: 0 -20%;
+    }
+
+
+    #stc-action-box, #whats-action-box, #take-action-box, #who-action-box, #why-action-box {
+        margin: 60px 3%;
+    }
+
+
+    #table-of-contents h4.btn.btn-warning {
+        margin: 0 16% 2.5em;
+    }
+
+    #stc-action-examples h4.btn.btn-success {
+        margin: 0 17% 2.5em;
+    }
+
+    #people-behind-stc h4.btn.btn-primary {
+        margin: 0 17% 2.5em;
+    }
+
+    #donate-stc .btn.btn-info {
+        margin: 5% 25%;
+    }
+
+    tbody td.store2 h3 {
+      font-size: 1.225em;
+      width: 8em;
+      margin: 0.25em;
+      text-align: center;
+  }
+
+
+}
+
+
+
+
 @media only screen and (max-width : 320px) {
 
 
