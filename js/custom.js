@@ -835,7 +835,9 @@ function revealBioInfo1($this) { // $("#phyllis-text.moreText") is the "$this"
             $(".info-container").eq(0).delay(200).css('width', '98%').css('left', '-15px');
         } else if ($(window).width() >= 481 && $(window).width() <= 568) {
             $(".info-container").eq(0).delay(200).css('width', '98%').css('left', '-7px');
-        } else if ($(window).width() >= 569 && $(window).width() <= 768) {
+        } else if ($(window).width() >= 569 && $(window).width() <= 640) {
+            $(".info-container").eq(0).delay(200).css('width', '90%').css('left', '2px');
+        } else if ($(window).width() >= 641 && $(window).width() <= 768) {
             $(".info-container").eq(0).delay(200).css('width', '88%').css('left', '-10px');
         } else {
             $(".info-container").eq(0).delay(200).css('width', '94%').css('left', '-10px');
@@ -865,7 +867,9 @@ function revealBioInfo2($this) { // $("#phyllis-text.moreText") is the "$this"
             $(".info-container").eq(1).delay(200).css('width', '98%').css('left', '-15px');
         } else if ($(window).width() >= 481 && $(window).width() <= 568) {
             $(".info-container").eq(1).delay(200).css('width', '98%').css('left', '-7px');
-        } else if ($(window).width() >= 569 && $(window).width() <= 768) {
+        } else if ($(window).width() >= 569 && $(window).width() <= 640) {
+            $(".info-container").eq(1).delay(200).css('width', '90%').css('left', '2px');
+        } else if ($(window).width() >= 641 && $(window).width() <= 768) {
             $(".info-container").eq(1).delay(200).css('width', '88%').css('left', '-10px');
         } else {
             $(".info-container").eq(1).delay(200).css('width', '94%').css('left', '-10px');
@@ -895,8 +899,10 @@ function revealBioInfo3($this) { // $("#phyllis-text.moreText") is the "$this"
             $(".info-container").eq(2).delay(200).css('width', '98%').css('left', '-15px');
         } else if ($(window).width() >= 481 && $(window).width() <= 568) {
             $(".info-container").eq(2).delay(200).css('width', '98%').css('left', '-7px');
-        } else if ($(window).width() >= 569 && $(window).width() <= 768) {
-            $(".info-container").eq(2).delay(200).css('width', '88%').css('left', '-10px');
+        } else if ($(window).width() >= 569 && $(window).width() <= 640) {
+            $(".info-container").eq(2).delay(200).css('width', '90%').css('left', '2px');
+        } else if ($(window).width() >= 641 && $(window).width() <= 768) {
+              $(".info-container").eq(2).delay(200).css('width', '88%').css('left', '-10px');
         } else {
             $(".info-container").eq(2).delay(200).css('width', '94%').css('left', '-10px');
         }
@@ -927,7 +933,9 @@ function revealBioInfo4($this) { // $("#phyllis-text.moreText") is the "$this"
             $(".info-container").eq(3).delay(200).css('width', '98%').css('left', '-15px');
         } else if ($(window).width() >= 481 && $(window).width() <= 568) {
             $(".info-container").eq(3).delay(200).css('width', '98%').css('left', '-7px');
-        } else if ($(window).width() >= 569 && $(window).width() <= 768) {
+        } else if ($(window).width() >= 569 && $(window).width() <= 640) {
+            $(".info-container").eq(3).delay(200).css('width', '90%').css('left', '2px');
+        } else if ($(window).width() >= 641 && $(window).width() <= 768) {
             $(".info-container").eq(3).delay(200).css('width', '88%').css('left', '-10px');
         } else {
             $(".info-container").eq(3).delay(200).css('width', '94%').css('left', '-10px');
@@ -957,7 +965,9 @@ function revealBioInfo5($this) { // $("#phyllis-text.moreText") is the "$this"
             $(".info-container").eq(4).delay(200).css('width', '98%').css('left', '-15px');
         } else if ($(window).width() >= 481 && $(window).width() <= 568) {
             $(".info-container").eq(4).delay(200).css('width', '98%').css('left', '-7px');
-        } else if ($(window).width() >= 569 && $(window).width() <= 768) {
+        } else if ($(window).width() >= 569 && $(window).width() <= 640) {
+            $(".info-container").eq(4).delay(200).css('width', '90%').css('left', '2px');
+        } else if ($(window).width() >= 641 && $(window).width() <= 768) {
             $(".info-container").eq(4).delay(200).css('width', '88%').css('left', '-10px');
         } else {
             $(".info-container").eq(4).delay(200).css('width', '94%').css('left', '-10px');
@@ -991,10 +1001,12 @@ function hideBioInfo($this) { // (thumbImage1) is the "$this"
             $(".info-container").delay(200).css('width', '68%').css('left', '68px');
         } else if ($(window).width() >= 481 && $(window).width() <= 568) {
             $(".info-container").delay(200).css('width', '71%').css('left', '67px');
-        } else if ($(window).width() >= 569 && $(window).width() <= 768) {
-            $(".info-container").css('width', '80%').css('left', '40px');
+        } else if ($(window).width() >= 569 && $(window).width() <= 640) {
+            $(".info-container").delay(200).css('width', '90%').css('left', '-16px');
+        } else if ($(window).width() >= 641 && $(window).width() <= 768) {
+            $(".info-container").delay(200).css('width', '80%').css('left', '40px');
         } else {
-            $(".info-container").css('width', '94%').css('left', '0px');
+            $(".info-container").delay(200).css('width', '94%').css('left', '0px');
         }
 
 
