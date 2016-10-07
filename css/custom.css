@@ -2094,6 +2094,7 @@ article .info-container {
     display: -webkit-flex;
     display: -ms-flex;	
     display: flex;
+    -ms-flex-direction: row;
     flex-direction: row;
     position: absolute;
     width: 1800px;
