@@ -3238,10 +3238,6 @@ table tbody td.orig-edition {
 
 
 
-
-
-
-
 @media screen and (max-width: 768px) {
 
 
@@ -3355,6 +3351,12 @@ table tbody td.orig-edition {
         height: 380px;
         margin: 60px auto;
         border-radius: 8px;
+    }
+
+
+    article .intro h4 {
+        line-height: 0.85em;
+        margin-left: 5%;
     }
 
 
@@ -4288,12 +4290,13 @@ table tbody td.orig-edition {
     }
 
 
+
     article .intro h4 {
-        margin-left: 2px;
+        margin-left: 5%;
     }
 
     article .intro h4.script {
-        margin-left: 2px;
+        margin-left: 5%;
     }
 
 
