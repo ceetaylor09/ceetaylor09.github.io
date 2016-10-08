@@ -2106,6 +2106,7 @@ article .info-container {
 
 
 .img-flexed {
+    -ms-flex: 0 1 135px;
     flex-basis: 135px;
     padding: 0 0.5em;
     margin-right: 90px;
