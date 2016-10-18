@@ -1005,6 +1005,8 @@ function hideBioInfo($this) { // (thumbImage1) is the "$this"
             $(".info-container").delay(200).css('width', '90%').css('left', '-16px');
         } else if ($(window).width() >= 641 && $(window).width() <= 768) {
             $(".info-container").delay(200).css('width', '80%').css('left', '40px');
+        } else if ($(window).width() >= 769 && $(window).width() <= 1024) {
+            $(".info-container").delay(200).css('width', '70%').css('left', '95px');
         } else {
             $(".info-container").delay(200).css('width', '94%').css('left', '0px');
         }
