@@ -1,0 +1,502 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #0d274a;
+}
+
+#upper {
+    margin: 0 auto;
+}
+
+svg {
+    position: absolute;
+}
+
+#header-bg {
+    overflow: hidden;
+}
+
+#smokeClouds, #fpiLight, #fpiLogo, #logo-bg, path.puzzle {
+    opacity: 0;
+}
+
+#smokeClouds {
+    overflow: hidden;
+    opacity: 0;
+}
+
+
+#video, #character, #review, #about {
+    position: absolute;
+}
+
+#character, #review, #about {
+    opacity: 0;
+}
+
+
+
+/* ABOUT FPI SECTION */
+
+#abt-photo1 {
+    position: absolute;
+    top: 471px;
+    left: 195px;
+    width: 398px;
+    height: 278px;
+    background: url(../../assets/img/about1-photo.png) no-repeat;
+}
+
+#abt-photo2 {
+    position: absolute;
+    top: 752px;
+    left: 227px;
+    width: 384px;
+    height: 270px;
+    background: url(../../assets/img/about2-photo.png) no-repeat;
+}
+
+#abt-photo3 {
+    position: absolute;
+    top: 380px;
+    left: 1002px;
+    width: 262px;
+    height: 227px;
+    background: url(../../assets/img/about3-photo.png) no-repeat;
+}
+
+#abt-title {
+    position: absolute;
+    top: 515px;
+    left: 635px;
+    width: 400px;
+    height: 300px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    color: #1F2804;
+    z-index: 5;
+}
+
+#abt-writing {
+    position: absolute;
+    top: 625px;
+    left: 635px;
+    width: 580px;
+    height: 350px;
+    background: #d3e3b7;
+    padding: 10px;
+    border: 6px solid #1F2804;
+    overflow-y: hidden;
+    z-index: 5;
+}
+
+#abt-container {
+    position: relative;
+    width: 580px;
+    height: 350px;    
+    background: transparent;
+    overflow: hidden;
+}
+
+
+#synopsis {
+    position: absolute;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;
+    line-height: 25px;
+    overflow: auto;
+}
+
+#synopsis a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #1F2804;
+}
+
+
+
+/* MOVIE REVIEW SECTION */
+
+#superman-photo {
+    position: absolute;
+    top: 682px;
+    left: 225px;
+    width: 247px;
+    height: 328px;
+    background: url(../../assets/img/sman-returns-poster.png) no-repeat;
+}
+
+#writing {
+    position: absolute;
+    top: 500px;
+    left: 520px;
+    width: 680px;
+    height: 450px;
+    background: #dbbdc5;
+    padding: 20px;
+    overflow: hidden;
+    z-index: 5;
+}
+
+#container {
+    position: relative;
+    width: 680px;
+    height: 450px;    
+    background: transparent;
+    overflow: hidden;
+}
+
+
+.movie-review {
+    position: absolute;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;
+    line-height: 25px;
+    overflow: auto;
+    
+}
+
+#movie-descript {
+    position: absolute;
+    top: 480px;
+    left: 210px;
+    width: 260px;
+    height: 200px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 0px 20px 0px;
+    color: white;
+    z-index: 5;  
+}
+
+#movie-descript p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: -6px;
+    color: #eab2d1;
+    z-index: 5;
+    
+}
+
+
+
+/* VIDEO SECTION */
+
+#vid-placeholder {
+    position: absolute;
+    top: 560px;
+    left: 527px;
+    width: 660px;
+    height: 380px;
+}
+
+#fpi-pilot {
+    position: absolute;
+    top: 560px;
+    left: 527px;
+    width: 660px;
+    height: 380px;
+    z-index: 5;
+}
+
+#ep-listing {
+    position: absolute;
+    top: 510px;
+    left: 210px;
+    width: 260px;
+    height: 440px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 34px;
+    letter-spacing: 1px;
+    color: white;
+    z-index: 5;
+}
+
+#ep-listing p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    color: #87c8e5;
+    z-index: 5;
+}
+
+
+
+/* CHARACTER PROFILES SECTION */
+
+#devin, #cara, #sid, #ty, #alicia {
+    position: absolute;
+}
+
+#cara, #sid, #ty, #alicia {
+    opacity: 0;
+}
+
+
+#alicia {
+    position: absolute;
+    top: 610px;
+    left: 178px;
+    width: 397px;
+    height: 322px;
+    background: url(../../assets/img/alicia-photo.png) no-repeat;
+}
+
+#ty {
+    position: absolute;
+    top: 534px;
+    left: 177px;
+    width: 444px;
+    height: 329px;
+    background: url(../../assets/img/ty-photo.png) no-repeat;
+}
+
+#sid {
+    position: absolute;
+    top: 518px;
+    left: 863px;
+    width: 411px;
+    height: 364px;
+    background: url(../../assets/img/sid-photo.png) no-repeat;
+}
+
+#cara {
+    position: absolute;
+    top: 437px;
+    left: 178px;
+    width: 426px;
+    height: 399px;
+    background: url(../../assets/img/cara-photo.png) no-repeat;
+}
+
+#devin {
+    position: absolute;
+    top: 394px;
+    left: 855px;
+    width: 426px;
+    height: 431px;
+    background: url(../../assets/img/devin-photo.png) no-repeat;
+}
+
+#devin-copy {
+    position: absolute;
+    top: 475px;
+    left: 212px;
+    width: 650px;
+    height: 400px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 18px;
+    line-height: 24px;
+    z-index: 5;
+}
+
+#devin-copy p {
+    color: #97d9f7;
+}
+
+
+#cara-copy {
+    position: absolute;
+    top: 475px;
+    left: 636px;
+    width: 614px;
+    height: 400px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 18px;
+    line-height: 24px;
+    z-index: 5;
+}
+
+
+#cara-copy p {
+    color: #c4b9e8;
+}
+
+
+#sid-copy {
+    position: absolute;
+    top: 500px;
+    left: 226px;
+    width: 590px;
+    height: 400px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 18px;
+    line-height: 24px;
+    z-index: 5;
+}
+
+#sid-copy p {
+    color: #87edd5;
+}
+
+
+#ty-copy {
+    position: absolute;
+    top: 485px;
+    left: 650px;
+    width: 590px;
+    height: 400px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 18px;
+    line-height: 24px;
+    z-index: 5;
+}
+
+#ty-copy p {
+    color: #dea0a0;
+}
+
+
+#alicia-copy {
+    position: absolute;
+    top: 545px;
+    left: 615px;
+    width: 565px;
+    height: 300px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 18px;
+    line-height: 24px;
+    z-index: 5;
+}
+
+#alicia-copy p {
+    color: #a8a8a8;
+}
+
+
+#cara-copy, #sid-copy, #ty-copy, #alicia-copy {
+    opacity: 0;
+}
+
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold-italic {
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+#movie-descript h1 {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: normal;
+    font-style: italic;
+    margin-top: 2em;
+}
+
+
+#bottomText {
+    position: absolute;
+    left: 285px;
+    top: 1060px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    color: white;
+    z-index: 4;
+}
+
+#bottomText a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #87c8e5;
+}
+
+
+
+/* CHARACTER MENU BUTTONS */
+
+#devinBtn {
+    position: absolute;
+    top: 903px;
+    left: 561px;
+    width: 203px;
+    height: 117px;
+    background: url(../../assets/img/devin-button.png) no-repeat;
+}
+
+#caraBtn {
+    position: absolute;
+    top: 886px;
+    left: 731px;
+    width: 128px;
+    height: 134px;
+    background: url(../../assets/img/cara-button.png) no-repeat;
+}
+
+#sidBtn {
+    position: absolute;
+    top: 904px;
+    left: 863px;
+    width: 114px;
+    height: 116px;
+    background: url(../../assets/img/sid-button.png) no-repeat;
+}
+
+#tyBtn {
+    position: absolute;
+    top: 903px;
+    left: 980px;
+    width: 167px;
+    height: 115px;
+    background: url(../../assets/img/ty-button.png) no-repeat;
+}
+
+#aliciaBtn {
+    position: absolute;
+    top: 902px;
+    left: 1112px;
+    width: 140px;
+    height: 115px;
+    background: url(../../assets/img/alicia-button.png) no-repeat;
+}
+
+
+
+/* MAIN MENUS SECTION */
+
+#menu {
+    position: absolute;
+    z-index: 3;
+}
+
+#menuButtons a {
+    cursor: pointer;
+}
+
+
+#charMenu {
+    position: absolute;
+    z-index: 4;
+}
+
+#charMenu a {
+    cursor: pointer;
+}
+

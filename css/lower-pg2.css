@@ -1,0 +1,48 @@
+/* THE GOOGLE FONTS */
+
+
+/*font-family: 'Paytone One', sans-serif;
+font-family: 'Candal', sans-serif;
+font-family: 'Della Respira', serif;
+font-family: 'Overlock', cursive;*/
+
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: lightblue;
+}
+
+#lower {
+    margin: 0 auto
+}
+
+svg {
+    position: absolute;
+}
+
+
+.active2 {
+    position: absolute;
+    z-index: 4;
+}
+
+.lastActive2 {
+    position: absolute;
+    z-index: 1;
+}
+
+#menu {
+    position: absolute;
+    z-index: 10;
+}
+
+
+
+a {
+    cursor: pointer;
+}
