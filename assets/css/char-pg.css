@@ -1,0 +1,152 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: lightblue;
+}
+
+#lower {
+    margin: 0 auto
+}
+
+svg {
+    position: absolute;
+}
+
+
+
+/*#devin, #cara, #sid, #ty, #alicia {
+    position: absolute;
+}
+
+#cara, #sid, #ty, #alicia {
+    opacity: 0;
+}*/
+
+
+#devin2, #cara2, #sid2, #ty2, #alicia2 {
+    position: absolute;
+}
+
+#alicia2, #cara2, #sid2, #ty2 {
+    opacity: 0;
+}
+
+#alicia2 {
+    position: absolute;
+    top: 635px;
+    left: 177px;
+    width: 397px;
+    height: 322px;
+    background: url(../img/alicia-photo.png) no-repeat;
+}
+
+#ty2 {
+    position: absolute;
+    top: 534px;
+    left: 177px;
+    width: 444px;
+    height: 329px;
+    background: url(../img/ty-photo.png) no-repeat;
+}
+
+#sid2 {
+    position: absolute;
+    top: 518px;
+    left: 863px;
+    width: 411px;
+    height: 364px;
+    background: url(../img/sid-photo.png) no-repeat;
+}
+
+#cara2 {
+    position: absolute;
+    top: 437px;
+    left: 178px;
+    width: 426px;
+    height: 399px;
+    background: url(../img/cara-photo.png) no-repeat;
+}
+
+#devin2 {
+    position: absolute;
+    top: 394px;
+    left: 855px;
+    width: 426px;
+    height: 431px;
+    background: url(../img/devin-photo.png) no-repeat;
+}
+
+
+
+
+
+#devinBtn2 {
+    position: absolute;
+    top: 903px;
+    left: 561px;
+    width: 203px;
+    height: 117px;
+    background: url(../img/devin-button.png) no-repeat;
+}
+
+#caraBtn2 {
+    position: absolute;
+    top: 886px;
+    left: 731px;
+    width: 128px;
+    height: 134px;
+    background: url(../img/cara-button.png) no-repeat;
+}
+
+#sidBtn2 {
+    position: absolute;
+    top: 904px;
+    left: 863px;
+    width: 114px;
+    height: 116px;
+    background: url(../img/sid-button.png) no-repeat;
+}
+
+#tyBtn2 {
+    position: absolute;
+    top: 903px;
+    left: 980px;
+    width: 167px;
+    height: 115px;
+    background: url(../img/ty-button.png) no-repeat;
+}
+
+#aliciaBtn2 {
+    position: absolute;
+    top: 902px;
+    left: 1112px;
+    width: 140px;
+    height: 115px;
+    background: url(../img/alicia-button.png) no-repeat;
+}
+
+
+
+
+
+.selected {
+    position: absolute;
+    z-index: 3;
+}
+
+/*#charMenu {
+    position: absolute;
+    z-index: 6;
+}*/
+
+#charMenu2 {
+    position: absolute;
+    z-index: 8;
+}
+
+/*#charMenu a {
+    cursor: pointer;
+}*/

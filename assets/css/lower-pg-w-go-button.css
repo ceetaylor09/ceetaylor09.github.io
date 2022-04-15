@@ -1,0 +1,81 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: lightblue;
+}
+
+#lower {
+    margin: 0 auto
+}
+
+svg {
+    position: absolute;
+}
+
+
+#video, #character, #review, #about {
+    position: absolute;
+}
+
+#character, #review, #about {
+    opacity: 0;
+}
+
+#vid-placeholder {
+    position: absolute;
+    top: 572px;
+    left: 514px;
+    width: 673px;
+    height: 357px;
+    background: brown;
+}
+
+/*.active2 {
+    position: absolute;
+    z-index: 4;
+}
+
+.lastActive2 {
+    position: absolute;
+    z-index: 1;
+}*/
+
+#menu {
+    position: absolute;
+    z-index: 3;
+}
+
+#menuButtons a {
+    cursor: pointer;
+}
+
+
+
+#devin, #cara, #sid, #ty, #alicia {
+    position: absolute;
+}
+
+#cara, #sid, #ty, #alicia {
+    opacity: 0;
+}
+
+/*.selected {
+    position: absolute;
+    z-index: 5;
+}*/
+
+#charButtons {
+    position: absolute;
+    z-index: 4;
+}
+
+#charButtons a {
+    cursor: pointer;
+}
+
+#goToButton a {
+    cursor: pointer;
+}
