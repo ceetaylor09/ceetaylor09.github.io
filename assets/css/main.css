@@ -508,7 +508,7 @@ h2 {
 @media screen and (max-width: 1400px) {
  
     #siteContainer {
-        margin: 0 12.5% ;
+        margin: 0 12.5%;
     }
     
     #siteContainer, #upper, #lower, #bottomText {
@@ -532,8 +532,8 @@ h2 {
     }
     
     #siteContainer, #upper, #lower, #bottomText {
-        transform: scale(0.82);
-        margin: 18% 2%;
+        transform: scale(0.81);
+        margin: 8% 2%;
     }
     
     #bottomText {
@@ -554,8 +554,8 @@ h2 {
     }
     
     #siteContainer, #upper, #lower, #bottomText {
-        transform: scale(0.79);
-        margin: 28% -2%;
+        transform: scale(0.78);
+        margin: 10% -2%;
     }
 }
 
@@ -568,8 +568,8 @@ h2 {
     }
     
     #siteContainer, #upper, #lower, #bottomText {
-        transform: scale(0.77);
-        margin: 25% -8%;
+        transform: scale(0.76);
+        margin: 8% -8%;
     }
     
     #bottomText {
@@ -586,8 +586,8 @@ h2 {
     }
     
     #siteContainer, #upper, #lower, #bottomText {
-        transform: scale(0.73);
-        margin: 28% -8.5%;
+        transform: scale(0.72);
+        margin: 7.5% -9%;
     }
 }
 
@@ -601,7 +601,7 @@ h2 {
    
     #siteContainer, #upper, #lower, #bottomText {
         transform: scale(0.65);
-        margin: 30% -4%;
+        margin: 12% -4%;
     }
     
     #bottomText {
@@ -620,8 +620,8 @@ h2 {
     }
    
     #siteContainer, #upper, #lower, #bottomText {
-        transform: scale(0.62);
-        margin: 38% -6%;
+        transform: scale(0.60);
+        margin: 14% -6%;
     }
 }
 
@@ -633,8 +633,8 @@ h2 {
     }
    
     #siteContainer, #upper, #lower, #bottomText {
-        transform: scale(0.58);
-        margin: 45% -7%;
+        transform: scale(0.57);
+        margin: 20% -7%;
     }
     
     #bottomText {
