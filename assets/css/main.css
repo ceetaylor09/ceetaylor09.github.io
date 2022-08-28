@@ -643,9 +643,35 @@ h2 {
     }
    
     #siteContainer, #upper, #lower, #bottomText {
+        transform: scale(0.58);
+        margin: 10% -7%;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    
+     body {
+        width: 415px;
+        height: auto;
+    }
+   
+    #siteContainer, #upper, #lower, #bottomText {
         transform: scale(0.57);
-        margin: 10% -5.5%;
+        margin: 10% -7%;
     }
     
+}
+
+@media screen and (max-width: 375px) {
+    
+     body {
+        width: 376px;
+        height: auto;
+    }
+   
+    #siteContainer, #upper, #lower, #bottomText {
+        transform: scale(0.56);
+        margin: 10% -10.5%;
+    }
     
 }
