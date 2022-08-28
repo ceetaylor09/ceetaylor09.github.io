@@ -4,6 +4,7 @@ body {
     padding: 0;
     background: #032E59;
     position: relative;
+    overflow-x: hidden;
 }
 
 #siteContainer {
@@ -508,7 +509,7 @@ h2 {
 @media screen and (max-width: 1400px) {
  
     #siteContainer {
-        margin: 0 12.5%;
+        margin: 0 13%;
     }
     
     #siteContainer, #upper, #lower, #bottomText {
@@ -533,7 +534,7 @@ h2 {
     
     #siteContainer, #upper, #lower, #bottomText {
         transform: scale(0.81);
-        margin: 8% 2%;
+        margin: 7% 3%;
     }
     
     #bottomText {
@@ -555,7 +556,7 @@ h2 {
     
     #siteContainer, #upper, #lower, #bottomText {
         transform: scale(0.78);
-        margin: 10% -2%;
+        margin: 10% 0;
     }
 }
 
@@ -569,7 +570,7 @@ h2 {
     
     #siteContainer, #upper, #lower, #bottomText {
         transform: scale(0.76);
-        margin: 8% -8%;
+        margin: 6% -4.5%;
     }
     
     #bottomText {
@@ -587,7 +588,7 @@ h2 {
     
     #siteContainer, #upper, #lower, #bottomText {
         transform: scale(0.72);
-        margin: 5% -9%;
+        margin: 5% -6.6%;
     }
 }
 
@@ -601,7 +602,7 @@ h2 {
    
     #siteContainer, #upper, #lower, #bottomText {
         transform: scale(0.65);
-        margin: 5% -3%;
+        margin: 5% -4.5%;
     }
     
     #bottomText {
@@ -621,7 +622,7 @@ h2 {
    
     #siteContainer, #upper, #lower, #bottomText {
         transform: scale(0.59);
-        margin: 7% -7%;
+        margin: 6% -2.5%;
     }
     
     #bottomText {
@@ -642,7 +643,7 @@ h2 {
    
     #siteContainer, #upper, #lower, #bottomText {
         transform: scale(0.57);
-        margin: 20% -8%;
+        margin: 10% -5.5%;
     }
     
     
